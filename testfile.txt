@@ -1,0 +1,170 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+ 
+public class Calculator
+{
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable(),
+		{
+			public void run() {
+				CalculatorFrame frame = new CalculatorFrame();
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frame.setVisible(true);
+			}
+		});
+	}
+}
+class CalculatorFrame extends JFrame {
+	public CalculatorFrame() {
+		setTitle("Calculator");
+		CalculatorPanel panel = new CalculatorPanel();
+		add(panel);
+		pack();
+	}
+}
+class CalculatorPanel extends JPanel {
+	public CalculatorPanel() {
+		setLayout(new BorderLayout());
+ 
+		result = 0;
+		lastCommand = "=";
+		start=true;
+ 
+		display = new JButton("0");
+		display.setEnabled(false);
+		add(display, BorderLayout.NORTH);
+ 
+		ActionListener insert = new InsertAction();
+		ActionListener command = new CommandAction();
+ 
+		panel = new JPanel();
+		panel.setLayout(new GridLayout(4, 4));
+ 
+		addButton("7", insert);
+		addButton("8", insert);
+		addButton("9", insert);
+		addButton("/", command);
+ 
+		addButton("4", insert);
+		addButton("5", insert);
+		addButton("6", insert);
+		addButton("*", command);
+ 
+		addButton("1", insert);
+		addButton("2", insert);
+		addButton("3", insert);
+		addButton("-", command);
+ 
+		addButton("0", insert);
+		addButton(".", insert);
+		addButton("=", command);
+		addButton("+", command);
+		
+		add(panel, BorderLayout.CENTER);
+	}
+	private void addButton(String label, ActionListener listener) 
+	{
+		JButton button = new JButton(label);
+		button.addActionListener(listener);
+		panel.add(button);
+	}
+	private class InsertAction implements ActionListener 
+	{
+		public void actionPerformed(ActionEvent event) 
+		{
+			String input = event.getActionCommand();
+			if(start) {
+				start = false;
+			}
+			display.setText(display.getText() + input);
+		}
+	}
+ public  acquireFoo(int id) {
+  Foo result = null;
+  if (id > 50) {
+    result = fooService.read(id);
+  } else {
+    result = new Foo(id);
+  }
+  assert result != null;
+
+  return result;
+}
+}
+class Child {}
+class ChildOfChild extends Child {}
+public class Test {
+ 
+    public static void main(String[] args) {
+ 
+        final int I = 1;
+	Parent p = new ChildOfChild();
+	print(p instanceof Child);
+
+ 
+    }
+}
+public interface SimpleInterface {
+	
+}
+public class Cat extends Animal implements SimpleInterface {
+
+	
+public  acquireFoo(int id) {
+public CalculatorFrame() {
+	a=b++;
+		for(int i=0,b=1;i<50;i++, b++)
+		{
+		a=b++;
+		}
+		switch (seqNumberFromSun) 
+		{
+        case 1: 
+			result.add("sjkhkaSIH");
+            break;
+        case 2:
+        case 4: result.add("jvhvkvk");
+            break;
+        case 3: result.add("kfnkej");
+            result.add("fkejflk");
+            result.add("fekjfliej");
+            break;
+        case 5:
+        case 6: result.add("fejhkfrel");
+            result.add("fjerliijo");
+            break;
+        case 7:
+        case 8: 
+            break;
+        default:
+		break;
+    }
+	}
+for (int i = 0; i<50; i++)
+	{
+	a=0;
+	}
+  Foo result = null;
+  if (id > 50) {
+ 
+    result = fooService.read(id);
+  } else {
+    result = new Foo(id);
+  }
+  assert result != null;
+}
+}
+public class App {
+    public static void main(String[] args) {
+        try {
+            System.err.print(" 0");
+            if (true) 
+			{throw new RuntimeException();}
+            System.err.print(" 1");
+        } catch (Exception e) {
+            System.err.print(" 2");
+        }
+        System.err.println(" 3");
+    }
+}
